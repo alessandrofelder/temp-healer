@@ -8,7 +8,7 @@ template<class GV> void healer_Q1 (const GV& gv)
   // <<<2>>> Make grid function space
   typedef Dune::PDELab::ConformingDirichletConstraints CON;
   CON con;
-  typedef Dune::PDELab::QkLocalFiniteElementMap<GV,Coord,Real,1> FEM;
+  typedef Dune::PDELab::QkLocalFiniteElementMap<GV,Coord,Real,2> FEM;
   FEM fem(gv);
   typedef Dune::PDELab::ISTLVectorBackend<Dune::PDELab::ISTLParameters::no_blocking,1>
   VBE;

@@ -16,7 +16,9 @@ class Healer_LinearElasticityParameters
 			typedef Dune::PDELab::LinearElasticityParameterTraits<GV, Real> Traits;
 			void f(const typename Traits::ElementType& e, const typename Traits::DomainType& x, typename Traits::RangeType & y) const
 	        {
+				y[0] = 0.0;
 				y[1] = -9.81;
+				y[2] = 0.0;
 				return;
 	        }
 
@@ -36,19 +38,20 @@ class Healer_LinearElasticityParameters
 			{
 				y[0]=0.0;
 				y[1]=0.0;
+				y[2]=0.0;
 				return;
 			}
 
 			typename Traits::RangeFieldType
 			lambda(const typename Traits::ElementType& e, const typename Traits::DomainType& x) const
 			{
-				return 1.0;
+				return 6923077.0;
 			}
 
 			typename Traits::RangeFieldType
 			mu(const typename Traits::ElementType& e, const typename Traits::DomainType& x) const
 			{
-				return 1.0;
+				return 4615385.0;
 			}
 
 

@@ -72,7 +72,7 @@ int main(int argc, char** argv)
 {
   try{
     //Maybe initialize Mpi
-    Dune::MPIHelper& helper = Dune::MPIHelper::instance(argc, argv);
+	  Dune::MPIHelper& helper = Dune::MPIHelper::instance(argc, argv);
     if(Dune::MPIHelper::isFake)
       std::cout<< "This is a sequential program." << std::endl;
     else
@@ -94,7 +94,7 @@ int main(int argc, char** argv)
     // sequential version
     if (1 && helper.size()==1)
     {
-      const int dim = 2;
+      const int dim = 3;
       Dune::FieldVector<double,dim> L(1.0);
       Dune::array<int,dim> N(Dune::fill_array<int,dim>(1));
       std::bitset<dim> periodic(false);
