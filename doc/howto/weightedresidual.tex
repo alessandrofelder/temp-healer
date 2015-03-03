@@ -1,0 +1,50 @@
+x%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Weighted Residual Formulation}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Abstract Formulation}
+
+When we go about to solve a PDE problem we need a general idea of what
+a PDE problem is. We will develop such an idea in this section.
+
+
+We now give some concrete examples.
+
+
+\subsection{Properties of the Residual Form}
+
+
+\subsection{Time-dependent Problems}
+
+What about time-dependent problems?
+
+\begin{frame}
+\frametitle<presentation>{Time-dependent problems}
+After semidiscretization in space we obtain a problem of the form
+\begin{equation*}
+u_h(t)\in U_h : \quad \frac{\partial}{\partial t} m_h(u_h(t),v;t) + q_h(u_h(t),v;t)
+= 0 \qquad \forall v\in V_h, t\in\Sigma.
+\end{equation*}
+Implicit Euler (e.g.) then leads to: Find $u_h^{k+1}\in U_h$ s.t.
+\begin{equation*}
+\underbrace{m_h(u_h^{k+1},v;t^{k+1}) - m_h(u_h^{k},v;t^k) + \Delta
+t^{k}q_h(u_h^{k+1},v;t^{k+1})}_{r_h^\text{IE}(u_h,v)}  = 0
+\quad v\in V_h.
+\end{equation*}
+
+Explicit Euler (e.g.) leads to: Find  $u_h^{k+1}\in U_h$ s.t.
+\begin{equation*}
+\underbrace{m_h(u_h^{k+1},v;t^{k+1}) - m_h(u_h^{k},v;t^k) + \Delta
+t^{k}q_h(u_h^{k},v;t^{k})}_{r_h^\text{EE}(u_h,v)}  = 0
+\quad v\in V_h.
+\end{equation*}
+Higher-order time discretizations lead to similar problems.
+
+Explicit schemes may lead to easily invertible algebraic systems.
+\end{frame}
+
+\cleardoublepage

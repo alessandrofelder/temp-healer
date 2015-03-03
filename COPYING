@@ -1,0 +1,37 @@
+Copyright holders:
+
+2009--2014    Peter Bastian
+2009--2014    Markus Blatt
+2013          Andreas Buhr
+2009--2014    Christian Engwer
+2009--2012    Jorrit Fahlke
+2009--2012    Felix Heimann
+2013--2014    Christoph Grüninger
+2012--2013    Olaf Ippisch
+2010--2012    Ole Klein
+2009--2010    Sven Marnach
+2010--2014    Steffen Müthing
+2010--2013    Rebecca Neumann
+2011--2014    Adrian Ngo
+2012--2013    Jurgis Pods
+2010          Dan Popovic
+2011          Hanna Remmel
+2014          Oliver Sander
+2013          Bård Skaflestad
+
+
+The PDELab HOWTO example programs and documentation are free software and
+documentation.
+
+You can use, modify and/or redistribute the contained software (in the directory
+src/) under the terms of the BSD 3-clause license, which you can find in the
+file BSD.
+
+The documentation in the directory doc/ is licensed under the Creative Commons
+Attribution-ShareAlike 3.0 Unported License. You can find a copy of this license
+in the file CC-BY-SA. If not, see http://creativecommons.org/licenses/by-sa/3.0/
+or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain
+View, California, 94041, USA.
+
+Note that all of the code examples in the documentation can also be found in the
+directory src/ and are thus licensed under the terms of both licenses.

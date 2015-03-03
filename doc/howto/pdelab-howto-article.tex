@@ -1,0 +1,21 @@
+\documentclass[11pt,a4paper,titlepage,DIV12,%
+headsepline=false,headinclude,cleardoubleplainpage,bibtotoc]{scrartcl}
+\usepackage[utf8]{inputenc}
+% Don't load amsthm implicitly, there is a bug (Debian #572804) the prevents
+% it from working.  Of course, as the name of the noamsthm option suggests, it
+% also prevents the amsmath package from being implicitly loaded.  Load these
+% two packages explicitly instead.
+\usepackage[envcountsect,noamsthm]{beamerarticle}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\setjobnamebeamerversion{pdelab-howto-beamer}
+\input{pdelab-howto-main}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% mode: TeX-PDF
+%%% mode: auto-fill
+%%% TeX-master: t
+%%% mode: flyspell
+%%% ispell-local-dictionary: "american"
+%%% End: 
