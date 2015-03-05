@@ -14,10 +14,10 @@ class Healer_LinearElasticityParameters
 	  {
 	  public:
 			typedef Dune::PDELab::LinearElasticityParameterTraits<GV, Real> Traits;
-			void f(const typename Traits::ElementType& e, const typename Traits::DomainType& x, typename Traits::RangeType & y) const
+			void f(const typename Traits::ElementType& e, const typename Traits::DomainType& x, typename Traits::RangeType & y, double t) const
 	        {
 				y[0] = 0.0;
-				y[1] = -9.81;
+				y[1] = -9.81*cos(t);
 				y[2] = 0.0;
 				return;
 	        }
